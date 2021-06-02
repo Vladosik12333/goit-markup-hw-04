@@ -81,10 +81,37 @@ body {
   display: flex;
 }
 
+.header-contacts-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-contacts-button:hover,
 .header-contacts-button:focus {
   color: var(--logo-color);
   cursor: pointer;
+}
+
+.header-contacts-mail,
+.header-contacts-phone {
+  --header-color: currentColor;
+}
+
+.header-contacts-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts-phone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  display: flex;
+  align-items: center;
 }
 
 .header-contacts-button:not(:last-child) {
@@ -138,7 +165,10 @@ body {
 /* One section */
 
 .one-section {
-  background: #2f303a;
+  background-color: #2f303a;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  max-width: 1600px;
   padding: 200px 0px 200px 0px;
 }
 
