@@ -165,11 +165,13 @@ body {
 /* One section */
 
 .one-section {
-  background-color: #2f303a;
-  background-image: url(../images/background.jpg);
+  background: rgba(47, 48, 58, 0.4);
+  background: url(../images/background.jpg);
   background-size: cover;
+  background-position: center;
   max-width: 1600px;
   padding: 200px 0px 200px 0px;
+  margin: 0 auto;
 }
 
 .container-one-section {
