@@ -204,6 +204,7 @@ body {
 .footer-icons {
   width: 20px;
   height: 20px;
+  fill: white;
 }
 
 /* INDEX.html */
@@ -372,7 +373,7 @@ pre {
 }
 
 .four-section-name-and-position {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 
 .four-section-name {
@@ -391,6 +392,80 @@ pre {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--grey-color);
+}
+
+.four-container-icons {
+  margin-top: 16px;
+  padding: 0 32px 30px 32px;
+  display: flex;
+  margin-right: -10px;
+}
+
+.four-section-a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.four-section-a:focus,
+.four-section-a:hover {
+  background: var(--blue-color);
+  border-radius: 50% 50%;
+  --four-icons: white;
+  cursor: pointer;
+}
+
+.four-section-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+/* Five section */
+
+.five-section {
+  padding: 94px 0;
+}
+
+.five-section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-grey-color);
+  margin-bottom: 50px;
+}
+
+.five-section-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.five-section-a {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.five-section-a:hover,
+.five-section-a:focus {
+  border: 1px solid var(--blue-color);
+  --five-icons: var(--blue-color);
+}
+
+.five-section-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
 }
 
 /* PORTFOLIO.html */
@@ -443,10 +518,14 @@ pre {
 
 .portfolio-section-two-li {
   background: white;
+  margin-right: 30px;
+  cursor: pointer;
 }
 
-.portfolio-section-two-li {
-  margin-right: 30px;
+.portfolio-section-two-li:hover,
+.portfolio-section-two-li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-section-two-items > .portfolio-section-two-li:nth-child(3n + 3) {
