@@ -1,6 +1,6 @@
 :root {
   --main-font: 'Roboto', sans-serif;
-  --logo-color: #2196f3;
+  --blue-color: #2196f3;
   --black-grey-color: #212121;
   --white-color: #ffffff;
   --grey-color: #757575;
@@ -59,12 +59,12 @@ body {
 }
 
 .header-logo-apart-site {
-  color: var(--logo-color);
+  color: var(--blue-color);
 }
 
 .header-nav-button:hover,
 .header-nav-button:focus {
-  color: var(--logo-color);
+  color: var(--blue-color);
   cursor: pointer;
 }
 
@@ -89,7 +89,7 @@ body {
 
 .header-contacts-button:hover,
 .header-contacts-button:focus {
-  color: var(--logo-color);
+  color: var(--blue-color);
   cursor: pointer;
 }
 
@@ -136,7 +136,11 @@ body {
 }
 
 .footer-logo-apart-site {
-  color: var(--logo-color);
+  color: var(--blue-color);
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer .footer-address {
@@ -159,6 +163,47 @@ body {
 .footer-contacts {
   font-style: normal;
   cursor: default;
+}
+
+.footer-two-items {
+  margin-left: 70px;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-container-icons {
+  display: flex;
+  margin-right: -10px;
+}
+
+.footer-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50% 50%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item:focus,
+.footer-item:hover {
+  background: var(--blue-color);
+}
+
+.footer-icons {
+  width: 20px;
+  height: 20px;
 }
 
 /* INDEX.html */
@@ -236,6 +281,19 @@ pre {
   width: 270px;
 }
 
+.two-section-a {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.two-section-icon {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px 25px 100px;
+}
+
 .two-section-title {
   font-weight: bold;
   font-size: 14px;
@@ -243,6 +301,7 @@ pre {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black-grey-color);
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
