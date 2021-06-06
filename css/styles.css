@@ -62,10 +62,13 @@ body {
   color: var(--blue-color);
 }
 
-.header-nav-button:hover,
-.header-nav-button:focus {
+.header-nav-button:hover {
   color: var(--blue-color);
   cursor: pointer;
+}
+
+.header-nav-button a:focus {
+  color: var(--blue-color);
 }
 
 .header-nav-button:not(last-shild) {
@@ -87,10 +90,23 @@ body {
   justify-content: center;
 }
 
-.header-contacts-button:hover,
-.header-contacts-button:focus {
+.header-contacts-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-contacts-button a:focus {
+  color: var(--blue-color);
+}
+
+.header-contacts-button:hover {
   color: var(--blue-color);
   cursor: pointer;
+}
+
+.header-contacts-button:focus {
+  color: var(--blue-color);
 }
 
 .header-contacts-mail,
